@@ -1,5 +1,5 @@
-====================
-Monospark Docs Theme
-====================
+======================
+Monospark Sphinx Theme
+======================
 
-This repository contains a custom Sphinx theme which is used at https://docs.monospark.org
+A custom Sphinx theme for Monospark docs. Work in progress.

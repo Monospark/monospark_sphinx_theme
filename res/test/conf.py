@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'demo'
 
 # General information about the project.
-project = 'Sphinx test theme'
+project = 'monospark_sphinx_theme test'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -214,7 +214,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'Monospark-Sphinx-theme-test.tex', 'Monospark Sphinx theme test',
+  (master_doc, 'monospark_sphinx_theme test.tex', 'monospark_sphinx_theme test',
    'Christopher Schnick', 'manual'),
 ]
 
@@ -244,7 +244,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'test', 'Monospark Sphinx theme test',
+    (master_doc, 'test', 'monospark_sphinx_theme test',
      [author], 1)
 ]
 
@@ -258,8 +258,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'test', 'Monospark Sphinx theme test',
-   author, 'Monospark-Sphinx-theme-test', '',
+  (master_doc, 'test', 'monospark_sphinx_theme test',
+   author, 'monospark_sphinx_theme test', '',
    'Miscellaneous'),
 ]
 

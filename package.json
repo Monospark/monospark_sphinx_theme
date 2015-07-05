@@ -1,9 +1,9 @@
 {
-  "name": "Monospark-Sphinx-Theme",
+  "name": "monospark_sphinx_theme",
   "version": "0.0.1",
   "description": "A custom Sphinx theme which is used for the Monospark docs.",
-  "homepage": "https://github.com/monospark/monospark-sphinx-theme",
-  "bugs": "https://github.com/monospark/monospark-sphinx-theme/issues",
+  "homepage": "https://github.com/monospark/monospark_sphinx_theme",
+  "bugs": "https://github.com/monospark/monospark_sphinx_theme/issues",
   "license": "MIT",
   "author": {
     "name" : "Christopher Schnick",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-	"url" : "https://github.com/monospark/monospark-sphinx-theme.git"
+	"url" : "https://github.com/monospark/monospark_sphinx_theme.git"
   },
   "devDependencies": {
     "grunt": "~0.4.5",

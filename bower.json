@@ -11,6 +11,7 @@
     "url": "git://github.com/monospark/monospark-sphinx-theme.git"
   },
   "license": "MIT",
+  "private": "true",
   "ignore": [
     ".gitignore",
     "bower.json",

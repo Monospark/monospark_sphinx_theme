@@ -36,7 +36,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+# templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -51,6 +51,8 @@ master_doc = 'demo'
 
 # General information about the project.
 project = 'monospark_sphinx_theme test'
+copyright = '?'
+author = '?'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -105,13 +107,15 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ----------------------------------------------
 
+html_theme = 'monospark_sphinx_theme'
+
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ["../../.."]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

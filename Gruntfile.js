@@ -24,16 +24,16 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           expand: true,
-          cwd: 'sass',
+          cwd: 'src/sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/static/css',
+          dest: 'monospark_sphinx_theme/css',
           ext: '.css'
         }]
       },
       build: {
         files: [{
           expand: true,
-          cwd: 'sass',
+          cwd: 'src/sass',
           src: ['*.sass'],
           dest: 'monospark_sphinx_theme/static/css',
           ext: '.css'

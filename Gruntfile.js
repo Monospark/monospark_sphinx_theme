@@ -42,10 +42,7 @@ module.exports = function(grunt) {
     },
 
     exec: {
-      bower_update: {
-        cmd: 'bower update'
-      },
-      build_sphinx: {
+      sphinx: {
         cmd: 'sphinx-build res/test/src res/test/build'
       }
     },
@@ -60,8 +57,8 @@ module.exports = function(grunt) {
       },
 
       sphinx: {
-        files: ['monospark_sphinx_theme/**/*', 'res/test/**/*.rst', 'res/test/**/*.py'],
-        tasks: ['clean:build','exec:build_sphinx']
+        files: ['monospark_sphinx_theme/**/*', 'res/test/src/**/*.rst', 'res/test/src/**/*.py'],
+        tasks: ['exec:sphinx']
       },
 
       livereload: {
@@ -80,6 +77,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('default', ['clean:build','sass:dev','exec:build_sphinx','connect','open','watch']);
-  grunt.registerTask('build', ['clean:build','sass:build','exec:build_sphinx']);
+  grunt.registerTask('default', ['clean:build','sass:dev','exec:sphinx','connect','open','watch']);
+  grunt.registerTask('build', ['clean:build','sass:build','exec:sphinx']);
 }

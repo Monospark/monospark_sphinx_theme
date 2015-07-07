@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+  
+    {% block htmltitle %}
+      <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {% endblock %}
+
+    {# FAVICON #}
+    {% if favicon %}
+      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    {% endif %}
+
+    {# CSS #}
+
+    {% for cssfile in css_files %}
+      <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {% endfor %}
+
+    {% for cssfile in extra_css_files %}
+      <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {% endfor %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+  </body>
+</html>

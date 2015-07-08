@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Geometrix documentation build configuration file, created by
-# sphinx-quickstart on Mon Apr 27 18:13:16 2015.
-#
 # This file is execfile()d with the current directory set to its
 # containing dir.
 #
@@ -104,6 +101,12 @@ pygments_style = 'sphinx'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+
+# Monospark theme options
+
+html_context = {
+    'nav_entries' : {'Monospark website':'https://monospark.org', 'test':'https://test'}
+}
 
 # -- Options for HTML output ----------------------------------------------
 

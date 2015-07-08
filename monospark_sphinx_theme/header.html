@@ -1,0 +1,16 @@
+<div id="header">
+  <div id="logo">
+     {% if logo %}
+       <img src="{{ pathto('_static/' + logo, 1) }}" />
+     {% endif %}
+  </div>
+  {% if nav_entries %}
+    <nav>
+      <ul>
+	    {% for key, value in nav_entries.items() %}
+	      <li><a href="{{ value }}"> {{ key }}</a></li>
+	    {% endfor %}
+	  </ul>
+    </nav>
+  {% endif%}
+</div>

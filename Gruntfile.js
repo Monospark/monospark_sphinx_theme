@@ -24,16 +24,16 @@ module.exports = function(grunt) {
       dev: {
         files: [{
           expand: true,
-          cwd: 'src/sass',
+          cwd: 'sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/css',
+          dest: 'monospark_sphinx_theme/static/css',
           ext: '.css'
         }]
       },
       build: {
         files: [{
           expand: true,
-          cwd: 'src/sass',
+          cwd: 'sass',
           src: ['*.sass'],
           dest: 'monospark_sphinx_theme/static/css',
           ext: '.css'
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 
     exec: {
       sphinx: {
-        cmd: 'sphinx-build res/test/src res/test/build'
+        cmd: 'sphinx-build -a res/test/src res/test/build'
       }
     },
     clean: {
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: ['sass/*.sass'],
-        tasks: ['sass:dev']
+        tasks: ['sass:dev','exec:sphinx']
       },
 
       sphinx: {

@@ -1,16 +1,27 @@
-<div id="header">
-  <div id="logo">
-     {% if logo %}
-       <img src="{{ pathto('_static/' + logo, 1) }}" />
-     {% endif %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/">
+
+        <!-- This element is hidden and is only used to pre-load the shining logo variation.-->
+        <img id="preload-shining-logo" src="/_static/monospark-docs-logo-big-shining.png" />
+
+        <img class="navbar-brand" src="/_static/monospark-docs-logo-big.png" onmouseover="this.src='/_static/monospark-docs-logo-big-shining.png';" onmouseout="this.src='/_static/monospark-docs-logo-big.png';" />
+      </a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/projects/"><i class="fa fa-list-alt"></i> Projects</a></li>
+        <li><a href="https://forums.monospark.org"><i class="fa fa-users"></i> Forums</a></li>
+        <li><a href="/contact.php"><i class="fa fa-comment"></i> Contact</a></li>
+        <li><a href="/about.php"><i class="fa fa-info-circle"></i> About</a></li>
+      </ul>
+    </div>
   </div>
-  {% if nav_entries %}
-    <nav>
-      <ul>
-	    {% for key, value in nav_entries.items() %}
-	      <li><a href="{{ value }}"> {{ key }}</a></li>
-	    {% endfor %}
-	  </ul>
-    </nav>
-  {% endif%}
-</div>
+</nav>

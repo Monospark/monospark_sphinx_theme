@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-	var port = 9000;
+	var port = 9001;
 	
     grunt.initConfig({
     open : {
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/static/css',
+          dest: 'monospark_sphinx_theme/static',
           ext: '.css'
         }]
       },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/static/css',
+          dest: 'monospark_sphinx_theme/static',
           ext: '.css'
         }]
       }

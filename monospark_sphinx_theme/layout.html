@@ -10,25 +10,31 @@
     {% endblock %}
 
     {# FAVICON #}
-    {% if favicon %}
-      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
-    {% endif %}
+    <link rel="icon" href="/_static/favicon.png"/>
 
     {# CSS #}
 
-	<link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 	
-    {% for cssfile in css_files %}
-      <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
-    {% endfor %}
-
-    {% for cssfile in extra_css_files %}
-      <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
-    {% endfor %}
+	<link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+      
+    {# Scripts #}
+            
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      
+    <script src="/_static/offset-anchors.js"></script>
   </head>
   <body>
     {% include 'header.html' %}
   
-    {% block body %}{% endblock %}
+    <main class="container">
+      <section>
+        {% block body %}{% endblock %}
+      </section>
+	</main>
+      
+    {% include 'footer.html' %}
   </body>
 </html>

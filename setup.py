@@ -9,7 +9,7 @@ setup(
     author_email='c.schnick@monospark.org',
     description='Sphinx theme which is used for Monospark docs.',
     packages=['monospark_sphinx_theme'],
-    package_data={'sphinx_rtd_theme': [
+    package_data={'monospark_sphinx_theme': [
         'theme.conf',
         '*.html',
         'static/*.css',

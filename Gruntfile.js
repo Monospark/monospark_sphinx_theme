@@ -6,7 +6,7 @@ module.exports = function(grunt) {
     grunt.initConfig({
     open : {
       dev: {
-        path: 'http://localhost:' + port + '/demo.html'
+        path: 'http://localhost:' + port + '/index.html'
       }
     },
 

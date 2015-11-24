@@ -30,11 +30,22 @@
   <body>
     {% include 'header.html' %}
   
-    <main class="container">
-      <section>
-        {% block body %}{% endblock %}
-      </section>
-	</main>
+    <div class="container">
+	  <div class="row">
+	    <div id="sidebar-wrapper" class="col-md-3 col-md-push-9">
+	      <aside>
+		    <h3><a href="{{ pathto(master_doc) }}">{{ _('Table Of Contents') }}</a></h3>
+		    {{ toctree(maxdepth=4, collapse=False, includehidden=True) }}
+		  </aside>
+		</div>
+		<div class="col-md-9 col-md-pull-3">
+		  <main>
+          {% block body %}
+		  {% endblock %}
+		  </main>
+		</div>
+	  </div>
+	</div>
       
     {% include 'footer.html' %}
   </body>

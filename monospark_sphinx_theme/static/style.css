@@ -29,21 +29,22 @@ body {
   margin-top: 89px !important; }
 
 main {
+  background: #fff;
   padding-left: 2em;
-  padding-right: 2em; }
+  padding-right: 2em;
+  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5); }
+  main hr {
+    border-color: #3366cc !important;
+    box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.35); }
 
 main, aside {
-  background: #fff;
+  overflow: hidden;
   margin-bottom: 1.2em;
-  border-radius: 2px;
-  box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5); }
+  border-radius: 2px; }
   main h1, aside h1 {
     color: #3366cc !important;
     font-size: 34px !important;
     text-align: center; }
-  main hr, aside hr {
-    border-color: #3366cc !important;
-    box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.35); }
   main p, aside p {
     color: #1a1a1a; }
 
@@ -52,32 +53,47 @@ main, aside {
   padding-right: 0 !important; }
 
 aside {
+  background: #f2f2f2;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 0.1em;
+  padding-top: 0;
   margin-left: 0;
   margin-right: 0 !important;
-  line-height: 1.5em; }
+  box-shadow: 0px 3px 5px -2px rgba(50, 50, 50, 0.5); }
   aside h3 {
+    color: #3366cc !important;
     text-align: center; }
+  aside hr {
+    border-color: #3366cc !important;
+    box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.35);
+    margin: 0px 15px 25px !important; }
   aside ul {
     margin: 0;
     padding: 0;
-    list-style: none !important; }
-  aside ul {
-    margin: 0 0 0 12px; }
+    list-style: none !important;
+    padding-left: 15px; }
+  aside ul > li.toctree-l1 {
+    padding-bottom: 0.5em; }
   aside li.current > a {
     font-weight: bold; }
-  aside .toctree-l1.current {
-    display: list-item; }
-    aside .toctree-l1.current .toctree-l2 {
-      display: list-item; }
   aside .toctree-l1 {
-    font-size: 17px; }
+    font-size: 17px;
+    line-height: 24px; }
   aside .toctree-l2 {
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 23px; }
   aside .toctree-l3 {
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 22px; }
+  aside .toctree-l1 a {
+    color: #1a1a1a !important; }
+  aside a:hover {
+    background: #e5e5e5 !important;
+    border-radius: 2px;
+    text-decoration: none !important; }
+  aside a:focus {
+    outline: none !important;
+    text-decoration: none !important; }
 
 footer {
   padding-top: 1.5em;

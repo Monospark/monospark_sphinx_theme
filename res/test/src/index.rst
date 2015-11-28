@@ -3,6 +3,7 @@ Index
 =====
 
 .. toctree::
+   :numbered:
    
    demo
    site1

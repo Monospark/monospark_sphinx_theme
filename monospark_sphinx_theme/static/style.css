@@ -23,7 +23,7 @@ nav {
   nav .fa-list-alt {
     vertical-align: -5% !important; }
 
-/* Main Content */
+/* Main content */
 body {
   background: #e6e6e6 !important;
   margin-top: 89px !important; }
@@ -52,6 +52,7 @@ main, aside {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
+/* Table of contents */
 aside {
   background: #f2f2f2;
   padding-left: 0;
@@ -79,14 +80,17 @@ aside {
   aside .toctree-l1 {
     font-size: 17px;
     line-height: 24px; }
+    aside .toctree-l1 a {
+      color: #1a1a1a !important; }
   aside .toctree-l2 {
+    display: none;
     font-size: 15px;
     line-height: 23px; }
+  aside .toctree-l1.current .toctree-l2 {
+    display: list-item; }
   aside .toctree-l3 {
     font-size: 13px;
     line-height: 22px; }
-  aside .toctree-l1 a {
-    color: #1a1a1a !important; }
   aside a:hover {
     background: #e5e5e5 !important;
     border-radius: 2px;
@@ -95,6 +99,7 @@ aside {
     outline: none !important;
     text-decoration: none !important; }
 
+/* Footer */
 footer {
   padding-top: 1.5em;
   border-top: 1px solid #dfdfdf;
@@ -104,6 +109,7 @@ footer {
   footer p {
     font-size: 90%; }
 
+/* Misc */
 i.fa {
   vertical-align: 4%; }
 

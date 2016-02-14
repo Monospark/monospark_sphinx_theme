@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'monospark_sphinx_theme test'
+project = 'SomeProject'
 copyright = '?'
 author = '?'
 

@@ -1,3 +1,5 @@
+$break-medium: 992px
+
 /* Navbar */
 
 nav
@@ -37,6 +39,11 @@ body
   background: #e6e6e6 !important
   margin-top: 89px !important
   
+#main-wrapper
+  padding-left: 0
+  @media screen and (max-width: $break-medium)
+    padding-right: 0
+  
 main
   background: #fff
   padding-left: 2em
@@ -60,13 +67,17 @@ main, aside
   p 
     color: #1a1a1a
 
-#sidebar-wrapper
+#aside-wrapper
   padding-left: 0 !important
   padding-right: 0 !important
+    
+aside
+  @media screen and (min-width: $break-medium)
+    position: absolute
 
 /* Table of contents */  
   
-aside	
+aside
   background: #f2f2f2
   padding-left: 0
   padding-right: 0
@@ -85,10 +96,9 @@ aside
     margin: 0px 15px 25px !important
 	
   ul
-    margin: 0
-    padding: 0
     list-style: none !important
-    padding-left: 15px
+    padding-left: 10px
+    padding-right: 10px
 	
   ul>li.toctree-l1
     padding-bottom: 0.5em

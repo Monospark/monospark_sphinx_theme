@@ -26,7 +26,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/static',
+          dest: 'monospark_sphinx_theme/static/css',
           ext: '.css'
         }]
       },
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: 'sass',
           src: ['*.sass'],
-          dest: 'monospark_sphinx_theme/static',
+          dest: 'monospark_sphinx_theme/static/css',
           ext: '.css'
         }]
       }

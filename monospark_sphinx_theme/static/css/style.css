@@ -45,7 +45,7 @@ main {
 
 main, aside {
   overflow: hidden;
-  margin-bottom: 1.2em;
+  margin-bottom: 15px;
   border-radius: 2px; }
   main h1, aside h1 {
     color: #3366cc !important;
@@ -60,7 +60,8 @@ main, aside {
 
 @media screen and (min-width: 992px) {
   aside {
-    position: absolute; } }
+    position: absolute;
+    overflow-y: scroll; } }
 
 /* Table of contents */
 aside {

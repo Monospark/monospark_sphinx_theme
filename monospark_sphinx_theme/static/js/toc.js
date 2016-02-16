@@ -15,15 +15,13 @@ $(function() {
         if ($(window).width() < 992) {
             return;
         }
-        
+
         var asideHeight = $(window).height() - 19 - 15 - 70;
         var visibleFooterHeight = -($('footer').offset().top - $(window).scrollTop() - $(window).height());
         if (visibleFooterHeight < 0) {
             visibleFooterHeight = 0;
         }
-        
-        
-        console.log(visibleFooterHeight);
+
         $('aside').height(asideHeight - visibleFooterHeight);
     };
     

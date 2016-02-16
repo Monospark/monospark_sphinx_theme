@@ -61,7 +61,7 @@ main, aside {
 @media screen and (min-width: 992px) {
   aside {
     position: absolute;
-    overflow-y: scroll; } }
+    overflow-y: auto; } }
 
 /* Table of contents */
 aside {

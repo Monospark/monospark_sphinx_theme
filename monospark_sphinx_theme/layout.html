@@ -31,9 +31,11 @@
       <div class="row">
         <div id="aside-wrapper" class="col-md-3 col-md-push-9">
           <aside>
-            <h3><a href="{{ pathto(master_doc) }}">{{ project }}</a></h3>
-            <hr />
-            {{ toctree(maxdepth=4, collapse=False, includehidden=True) }}
+            <div id="inner-aside-wrapper">
+              <h3><a href="{{ pathto(master_doc) }}">{{ project }}</a></h3>
+              <hr />
+              {{ toctree(maxdepth=4, collapse=False, includehidden=True) }}
+            </div>
           </aside>
         </div>
         <div id="main-wrapper" class="col-md-9 col-md-pull-3">

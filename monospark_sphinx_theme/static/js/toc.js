@@ -21,8 +21,14 @@ $(function() {
         if (visibleFooterHeight < 0) {
             visibleFooterHeight = 0;
         }
+        
+        var newHeight = asideHeight - visibleFooterHeight;
+        var neededHeight = $('#inner-aside-wrapper').height();
+        if (neededHeight < newHeight) {
+            newHeight = neededHeight;
+        }
 
-        $('aside').height(asideHeight - visibleFooterHeight);
+        $('aside').height(newHeight);
     };
     
     resizeFunction();

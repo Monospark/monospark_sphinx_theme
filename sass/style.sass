@@ -1,3 +1,5 @@
+@import "bootstrap.min"
+
 $break-medium: 992px
 
 /* Navbar */
@@ -51,8 +53,14 @@ main
   box-shadow: 0px 3px 6px 0px rgba(50,50,50,0.5)
   
   hr
+    margin-top: 12px !important
+    margin-bottom: 30px !important
     border-color: #3366cc !important
     box-shadow: 0px 3px 6px 0px rgba(50,50,50,0.35)
+    
+  table
+    @extend .table, .table-bordered, .table-hover, .table-condensed
+
   
 main, aside
   overflow: hidden

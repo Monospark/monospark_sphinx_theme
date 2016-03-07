@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='monospark_sphinx_theme',
-    version='1.1.2',
+    version='1.1.3',
     url='https://github.com/monospark/monospark_sphinx_theme',
     license='MIT',
     author='Christopher Schnick',

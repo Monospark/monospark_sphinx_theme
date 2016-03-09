@@ -5666,6 +5666,16 @@ main {
   padding-left: 2em;
   padding-right: 2em;
   box-shadow: 0px 3px 6px 0px rgba(50, 50, 50, 0.5); }
+  main h1 {
+    font-size: 31px;
+    color: #3366cc !important;
+    text-align: center; }
+  main h2 {
+    font-size: 25px; }
+  main h3 {
+    font-size: 21px; }
+  main h4 {
+    font-size: 17px; }
   main dd {
     margin-left: 42px;
     margin-bottom: 12px; }
@@ -5679,10 +5689,6 @@ main, aside {
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 2px; }
-  main h1, aside h1 {
-    color: #3366cc !important;
-    font-size: 34px !important;
-    text-align: center; }
   main p, aside p {
     color: #1a1a1a; }
 

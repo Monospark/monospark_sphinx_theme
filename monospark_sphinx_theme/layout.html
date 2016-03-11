@@ -21,9 +21,9 @@
     {# Scripts #}       
     <script src="/_static/js/jquery-1.11.3.min.js"></script>
     <script src="/_static/js/bootstrap.min.js"></script>
-    <script src="/_static/js/offset-anchors.js"></script>
     <script src="/_static/js/hr-headlines.js"></script>
     <script src="/_static/js/toc.js"></script>
+    <script src="/_static/js/offset-anchors.js"></script>
   </head>
   <body>
     {% include 'header.html' %}
@@ -35,7 +35,7 @@
             <div id="inner-aside-wrapper">
               <h3><a href="{{ pathto(master_doc) }}">{{ project }}</a></h3>
               <hr />
-              {{ toctree(maxdepth=4, collapse=False, includehidden=True) }}
+              {{ toctree(maxdepth=3, collapse=False, includehidden=True) }}
             </div>
           </aside>
         </div>

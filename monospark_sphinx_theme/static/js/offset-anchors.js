@@ -7,6 +7,7 @@ $(function() {
         $('html,body').animate({
           scrollTop: target.offset().top - 80 //offsets for fixed header
         }, 200);
+        location = this.href;
         return false;
       }
     }

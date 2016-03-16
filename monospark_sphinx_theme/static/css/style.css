@@ -5749,6 +5749,10 @@ aside {
 
 #inner-aside-wrapper {
   overflow: hidden; }
+  #inner-aside-wrapper > ul {
+    margin-bottom: 0; }
+  #inner-aside-wrapper > ul:last-child {
+    margin-bottom: 10px; }
 
 /* Footer */
 footer {

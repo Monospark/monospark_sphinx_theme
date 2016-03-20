@@ -13,7 +13,7 @@ $(function() {
     }
   });
   //Executed on page load with URL containing an anchor tag.
-  if($(location.href.split("#")[1])) {
+  if(location.href.split("#")[1]) {
       var target = $('#'+location.href.split("#")[1]);
       if (target.length) {
         $('html,body').animate({
